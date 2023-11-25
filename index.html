@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Exam</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="header">
+        <img src="NEW GRAPHIX LOGO-01.png" alt="Company Logo">
+        <h1>GRAPHIX TECHNOLOGIES <br>
+            Central Government CAD/CAM/CAE Training Institute</h1>
+    </div>
+
+    <div class="container">
+        <!-- Login Form -->
+        <div id="loginForm" class="form-container">
+            <h2>Login</h2>
+            <form onsubmit="startExam(event)">
+                <label for="username">Username:</label>
+                <input type="text" id="username" placeholder="Enter your username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" placeholder="Enter your password" required>
+                
+                <button type="submit">Login</button>
+            </form>
+        </div>
+        <!-- Exam Form -->
+        <div id="examForm" class="form-container" style="display: none;">
+            <h2>Online Exam</h2>
+            <div id="timer">45:00</div>
+            <div id="questionContainer"></div>
+            <br><br>
+            <button id="submitButton" onclick="submitExam()">Submit Exam</button>
+        </div>
+
+        <!-- Thank You Form -->
+        <div id="thankYouForm" class="form-container" style="display: none;">
+            <h2>Thank You!</h2>
+            <p>Your exam has been submitted successfully....</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

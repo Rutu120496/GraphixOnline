@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.header {
+    background-color: #3498db; /* A shade of blue that complements the logo */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: small;
+}
+
+.header img {
+    width: 200px; /* Adjust the width of the logo as needed */
+    height: auto;
+    margin-right: 10px;
+    top: 3px; /* Adjust the top position as needed */
+    left: 10px; 
+    position: absolute;
+    background-color: #fff; /* Background color for the logo container */
+    padding: 8px; /* Add padding for the logo container */
+    border-radius: 50%;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* height: 100vh; */
+}
+
+.form-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* text-align: center; */
+    width: 600px; /* Adjust the width as needed */
+    margin-top: 20px; /* Add margin for separation from the header */
+}
+
+label {
+    text-align: left;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+input[type=text],[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #3498db;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#timer {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
